@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from '@material-ui/core/Button';
 
 function App() {
   const [count,setCount] = React.useState(0)
@@ -21,7 +22,7 @@ function App() {
         </a>
       <div>{count}</div>
       <div>
-        <button onClick={() => setCount(count + 1)}>Inc</button>
+        <Button variant="contained" color="primary" onClick={() => setCount(count + 1)}>Inc</Button>
       </div>
       </header>
     </div>
